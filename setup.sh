@@ -3,6 +3,10 @@
 clear
 echo -e "running setup.sh..."
 
+# install VMWare tools
+tar -xzf VMwareTools-9.6.2-1688356.tar.gz
+perl vmware-install.pl
+
 apt-get -qq update
 
 # git
